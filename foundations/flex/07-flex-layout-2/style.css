@@ -27,3 +27,83 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* ---------- SOLUTION ---------- */
+
+/* Changing the body to column flex direction */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  flex: 1;
+  display: flex;
+}
+
+/* Adjust the font size and weight */
+.header {
+  display: flex;
+  font-size: 32px;
+  font-weight: 900;
+  align-items: center;
+  padding: 0 16px;
+}
+
+/* Adjust the text and emote to center */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Adjusting the middle portion to take the rest of the white
+    space */
+.with-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+/* Left side bar */
+.sidebar {
+  flex: 0 1 300px;
+  padding: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+/* Cards and card containers */
+.card {
+  padding: 16px;
+  width: 300px;
+}
+
+.card-container {
+  padding: 48px;
+  display: flex;
+  flex-basis: 0;
+  flex-shrink: 1;
+  flex-grow: 1;
+  min-inline-size: 50%;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+
+
+
